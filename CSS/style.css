@@ -1,0 +1,656 @@
+/*==================================GLOBAL==================================*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+      font-size: 62.5%; /* 10px = 1rem*/
+    --main-background:hsl(218, 28%, 13%);
+    --intro-and-email-sign-up-background:hsl(217, 28%, 15%);
+    --footer-background:hsl(216, 53%, 9%);
+    --testimonials-background: hsl(219, 30%, 18%);
+
+    /*Font-styles
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    */
+}
+
+html,
+body{
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-background);
+    color: white;
+    
+}
+
+.wrapper{
+width: min(50rem, 100%);
+margin-inline: auto;
+padding-inline: 2rem;
+}
+
+
+
+
+
+/*==========================NAVIGATION========================*/
+
+
+#navigation{
+    margin-top: 2.5rem;
+    
+}
+
+ 
+#navigation::before{
+    content:'';
+    width: 100%;
+    height: 42rem;
+    background-color: var(--intro-and-email-sign-up-background);
+  
+        
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+
+
+#navigation .wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+}
+
+#navigation img{
+    width: 10rem;
+}
+
+#navigation ol{
+    display: flex;
+    
+}
+
+#navigation li{
+    list-style: none;
+    margin-left: 2rem;
+    font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+/*==========================APRESENTATION========================*/
+#apresentation{
+    margin-top: 5rem;
+    position: relative;
+ 
+}
+
+#apresentation .wrapper{
+    background-image: url("/Ratorando/fylo-dark-theme-landing-page-master/images/bg-curvy-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 100%;
+}
+
+#apresentation img{
+    width: 30rem;
+    display: block;
+    margin: auto;
+    margin-bottom: 2.5rem;
+  }
+
+#apresentation h2{
+    font-size: 2.3rem;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 2.5rem;
+    line-height: 3rem;
+}
+
+#apresentation p{
+    font-size: 1.6rem;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 3rem;
+}
+
+#apresentation .button{
+    display: flex;
+    width: 27rem;
+    height: 5rem;
+    border-radius: 30px;
+    background-color: #00ffff;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    margin: auto;
+    text-decoration: none;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+
+}
+
+/*==========================SOFTWARE-DETAILS========================*/
+#software-details{
+    margin-top: 10em;
+    margin-bottom: 10rem;
+}
+
+#software-details .wrapper{
+    margin-top: 10rem;
+    
+}
+
+#software-details .datails{
+    width: min(40rem, 90%);
+    margin: auto;
+}
+
+#software-details img{
+    display: block;
+    width: 8rem;
+    margin: auto;
+    margin-bottom: 2.5rem;
+}
+
+#software-details h3{
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 1rem;
+}
+
+
+#software-details p{
+    font-size: 1.4rem;
+    text-align: center;
+    margin-bottom: 6rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+/*==========================PRODUCTIVE========================*/
+#productive{
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+#productive img{
+    width: 30rem;
+    display: block;
+    margin: auto;
+    margin-bottom: 2.5rem;
+}
+
+#productive h2{
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 2rem;
+    
+}
+
+#productive p{
+    font-size: 1.5rem;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 2.5rem;
+}
+
+#productive a{
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: #00ffff;
+}
+
+#productive .icon-arrow{
+    display: inline-block;
+    width: 1.7rem;
+    position: absolute;
+    margin-left: 0.5rem;
+  
+}
+
+  #productive hr{
+    width: 14rem;
+    margin-top: 0.75rem;
+    border: solid #00ffff 0.1rem;
+}
+
+/*==========================DESCRIPTION========================*/
+#description{
+    margin-top: 10rem;  
+ 
+}
+
+#description .wrapper{
+    padding-bottom: 10rem;
+}
+
+#description .quotes{
+    width: 2.5rem;
+    margin-left:2rem;
+}
+
+#description .txt-description{
+    width: min(40rem,90%);
+    margin: auto;
+    background-color: var(--testimonials-background);
+    margin-bottom: 2.5rem;
+    padding: 2.5rem;
+    border: solid var(--intro-and-email-sign-up-background);
+    border-radius: 0.75rem;
+}
+
+.txt-description p:nth-child(odd){
+    font-size: 1.1rem;
+    opacity: 0.7;
+    margin-bottom: 1.5rem;
+    line-height: 2rem;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.txt-description img{
+    width: 2.75rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.txt-description .CEOs{
+display: flex;
+align-items: center;
+}
+
+.txt-description .CEOs h4{
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.10rem;
+    margin-bottom: 0.25rem;
+}
+
+.txt-description .CEOs p{
+    font-size: 0.9rem;
+    font-family: 'Open Sans', sans-serif;
+    opacity: 0.7;
+
+}
+
+/*==========================ACESS========================*/
+#acess{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: min(50rem,90%);
+    background-color: var(--intro-and-email-sign-up-background);
+    padding: 4rem 2rem 4rem 2rem;
+    border-radius: 1rem;
+    
+    margin: auto;
+    left: 5%;
+    
+}
+
+#acess h2{
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 1.5rem;
+}
+
+#acess p{
+    font-size: 1.3rem;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 1rem;
+}
+
+#acess input{
+    display: flex;
+    width: 27rem;
+    height: 5rem;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    margin: auto;
+    padding-left: 2rem;
+    margin-block:2rem;
+}
+
+#acess .button{
+    display: flex;
+    width: 27rem;
+    height: 5rem;
+    border-radius: 30px;
+    background-color: #00ffff;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    margin: auto;
+    text-decoration: none;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+
+
+/*==========================FOOTER========================*/
+footer{
+    margin-top: 15rem;
+    padding-top: 25rem;
+    background-color: var(--footer-background);
+    font-family: 'Open Sans', sans-serif; 
+}
+
+footer .logo-bottom{
+    width: 15rem;
+    margin-bottom: 3rem;
+}
+
+footer a{
+    text-decoration: none;
+    color: #ffffff;
+    display: inline;
+}
+
+footer .contact{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+}
+
+footer .contact img{
+    width: 1.5rem;
+    margin-right: 3rem;
+    margin-top: 0.50rem;
+}
+
+footer ol{
+    margin-bottom: 3rem;
+}
+
+footer li{
+    list-style: none;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    text-align: start;
+}
+
+footer .social-medias{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 20rem;
+    margin: auto;
+   
+}
+
+footer .social-medias i{
+    border: solid 1px white;
+    border-radius: 50%;
+    padding: 1.5rem;
+}
+
+footer .social-medias #circle-radius{
+    padding: 1.5rem 1.8rem 1.5rem 1.8rem;
+}
+
+/*==========================RESPONSIVIDADE========================*/
+@media (min-width: 1024px){
+
+/*==============================GERAL============================*/
+.wrapper{
+    width: min(170rem, 100%);
+    display: grid;
+}
+
+.col-a{
+    grid-area: A;
+}
+
+.col-b{
+    grid-area: B;
+}
+
+/*==========================NAVIGATION========================*/
+
+#navigation::before{
+    content:'';
+    width: 100%;
+    height: 125rem;
+}
+
+#navigation img{
+    width: 15rem;
+}
+
+#navigation ol{
+    display: flex;
+    
+}
+
+#navigation li{
+    list-style: none;
+    margin-left: 5rem;
+    font-size: 1.7rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/*==========================APRESENTATION========================*/
+
+
+#apresentation .wrapper{
+    width: 100%;
+    padding-bottom: 30rem;
+    background-image: url("/Ratorando/fylo-dark-theme-landing-page-master/images/bg-curvy-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    background-size:100%;
+}
+
+#apresentation .wrapper .content{
+  width: min(60rem, 100%);
+  margin: auto;
+}
+
+#apresentation img{
+    width: 70rem;
+  }
+
+#apresentation h2{
+    font-size: 3.2rem;
+    line-height: 5rem;
+}
+
+#apresentation p{
+    font-size: 2rem;
+    text-align: center;
+    line-height: 3rem;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 3rem;
+}
+
+/*==========================SOFTWARE-DETAILS========================*/
+#software-details{
+    margin-top: initial;
+}
+
+#software-details .content{
+    width: min(120rem, 90%);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+#software-details .details{
+    width: min(43rem, 90%);
+    margin: auto;   
+  
+}
+
+#software-details h3{
+    font-size: 2.2rem;
+   
+}
+
+#software-details p{
+    font-size: 1.6rem;
+  
+}
+
+#software-details .details .security-img{
+    width: 6rem;
+  
+}
+
+#software-details img{
+    width: 8rem;
+ 
+}
+
+/*==========================PRODUCTIVE========================*/
+#productive{
+    margin-bottom: 20rem;
+}
+
+#productive .wrapper{
+   
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-areas: 
+    'A B';
+ 
+   
+}
+
+#productive .col-a{
+    grid-area: A;
+    align-self: center;
+
+
+ 
+   
+}
+
+#productive .col-b{
+    width: min(50rem,90%);
+    align-self: center;
+    text-align: left;
+    
+ 
+   
+}
+
+#productive img{
+    width: 70rem;
+ 
+}
+
+#productive h2{
+    font-size: 4.1rem;
+    text-align: start;
+}
+
+#productive p{
+    font-size: 1.4rem;
+}
+
+#productive a{
+    font-size: 1.6rem;
+}
+
+/*==========================DESCRIPTION========================*/
+#description .content{
+    width: min(130rem, 90%);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-bottom: 10rem;
+}
+
+#description .txt-description{
+    width: min(38rem,90%);
+    padding: 3rem;
+    
+    
+}
+
+#description .quotes{
+    width: 5rem;
+    margin-left:20rem;
+    margin-top:-3rem;
+    position:absolute;
+    z-index: -1;
+} 
+
+#description .txt-description p:nth-child(odd){
+    font-size: 1.5rem;
+    opacity: initial;
+   
+ 
+
+}
+
+#description .txt-description h4{
+    font-size: 1.3rem;
+}
+
+#description .txt-description p{
+    font-size: 1.2rem;
+}
+
+/*==========================ACESS========================
+#acess{
+    width: min(100rem,90%);
+    left: 23%;
+    
+}
+
+#acess h2{
+    text-align: center;
+    font-size: 3.2rem;
+    
+}
+
+#acess p{
+    font-size: 1.9rem;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 1rem;
+}
+
+#acess .display-buttons{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#acess input{
+    display: flex;
+    width: 60rem;
+    
+}
+
+#acess .button{
+    font-size: 1.6rem;
+}
+
+
+*/
+}
